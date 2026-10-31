@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON VAGRANT // Independent Transit Terminal</title>
+  <meta name="description" content="Neon Vagrant — an independent courier, recovery, and bounty crew operating beyond corporate comfort." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="terminal-header">
+    <div class="brand-block">
+      <span class="status-dot"></span>
+      <div>
+        <p class="eyebrow">INDEPENDENT TRANSIT NETWORK // UNVERIFIED NODE</p>
+        <h1>NEON VAGRANT</h1>
+      </div>
+    </div>
+    <div class="header-readout">
+      <span>LINK: <b>UNSTABLE</b></span>
+      <span>AUTH: <b>GUEST</b></span>
+      <span>TRACE: <b>NO</b></span>
+    </div>
+  </header>
+
+  <nav class="terminal-tabs" aria-label="Main sections">
+    <button class="tab-button active" data-tab="landing">HOME</button>
+    <button class="tab-button" data-tab="vagrant">THE VAGRANT</button>
+    <button class="tab-button" data-tab="galaxy">THE GALAXY</button>
+    <button class="tab-button" data-tab="places">PLACES OF NOTE</button>
+  </nav>
+
+  <main>
+    <!-- =========================================================
+         TAB 1: LANDING PAGE
+         Replace hero placeholder with final wide Neon Vagrant key art.
+         Suggested asset: assets/hero-neon-vagrant.jpg
+         ========================================================= -->
+    <section id="landing" class="tab-panel active">
+      <div class="hero-panel">
+        <div class="hero-copy">
+          <p class="kicker">FREE TRANSIT // RECOVERY // BOUNTY // COURIER</p>
+          <h2>Out here, freedom still has an engine.</h2>
+          <p class="lead">
+            Megacorporations own the gates, the ports, the contracts, and increasingly the space between them.
+            The <strong>Neon Vagrant</strong> is one of the stubborn independent ships still slipping through the cracks.
+          </p>
+          <div class="hero-actions">
+            <button class="cta" data-jump="vagrant">OPEN CREW FILES</button>
+            <button class="cta secondary" data-jump="galaxy">VIEW GALACTIC OVERVIEW</button>
+          </div>
+        </div>
+        <div class="hero-art placeholder-art" data-placeholder="Wide hero image of the Neon Vagrant flying past corporate infrastructure">
+          <span>ART SLOT // HERO SHIP KEY ART</span>
+          <small>Recommended: 1600×900 or wider</small>
+        </div>
+      </div>
+
+      <div class="quick-grid">
+        <article class="info-card">
+          <span class="card-code">01 // STATUS</span>
+          <h3>Independent</h3>
+          <p>Legal enough to operate. Independent enough to annoy everyone with shareholders.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-code">02 // OPERATIONS</span>
+          <h3>Whatever Pays</h3>
+          <p>Courier work, recovery jobs, bounties, salvage, passenger transport, and “misunderstandings.”</p>
+        </article>
+        <article class="info-card">
+          <span class="card-code">03 // THREAT</span>
+          <h3>Asterion Dynamics</h3>
+          <p>The largest megacorporation in the galaxy. They prefer closed systems. The Vagrant is an open door.</p>
+        </article>
+      </div>
+
+      <div class="terminal-note">
+        <span class="terminal-label">SYSTEM NOTE</span>
+        <p>The Free Transit Accords still protect independent vessels. Asterion cannot quite outlaw ships like the Vagrant — so it settles for making survival expensive.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 2: THE NEON VAGRANT
+         Add a final ship reference image if desired:
+         assets/ship-neon-vagrant.jpg
+         Character mugshots: 300×400 recommended.
+         Character reference images: vertical or full-body key art.
+         ========================================================= -->
+    <section id="vagrant" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">INDEPENDENT VESSEL // FREE TRANSIT ACCORD REGISTERED</p>
+          <h2>The Neon Vagrant</h2>
+        </div>
+        <span class="section-stamp">LEGALLY DISTINCT FROM PIRACY</span>
+      </div>
+
+      <div class="split-feature">
+        <div class="feature-art placeholder-art tall" data-placeholder="Exterior reference image of the Neon Vagrant ship">
+          <span>ART SLOT // SHIP REFERENCE</span>
+          <small>Suggested: dramatic 4:3 or portrait crop</small>
+        </div>
+        <div class="feature-copy">
+          <p>
+            Once a support craft attached to a racing career that ended badly, the Vagrant is now captain Mara Vexley’s aging courier and recovery ship — patched, overworked, frequently underfunded, and kept flying through equal parts engineering talent and spite.
+          </p>
+          <p>
+            Independent vessels occupy an awkward legal niche. They can accept work outside corporate networks, carry passengers across jurisdictions, and move cargo through neutral ports without signing their lives over to a megacorp. That makes them useful to ordinary people — and infuriating to companies that prefer every journey to pass through their tollbooth.
+          </p>
+          <div class="ship-stats">
+            <div><span>CLASS</span><b>Independent Recovery / Courier</b></div>
+            <div><span>CAPTAIN</span><b>Mara Vexley</b></div>
+            <div><span>CONDITION</span><b>“Fine.” — Boone</b></div>
+            <div><span>INSURANCE</span><b>Do not ask Ivo.</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subheading-row">
+        <div>
+          <p class="kicker">SPACE PATROL BOOKING ARCHIVE</p>
+          <h3>Crew Files</h3>
+        </div>
+        <p class="hint">Select a mugshot to open the associated dossier.</p>
+      </div>
+
+      <div id="crew-gallery" class="portrait-gallery"></div>
+      <div id="crew-bio" class="bio-panel"></div>
+    </section>
+
+    <!-- =========================================================
+         TAB 3: THE WIDER GALAXY
+         Factions: Space Patrol, Asterion, Starbreakers.
+         Character portraits include Veda ID badge, Celestine magazine cover,
+         and mugshots/digital capture for others.
+         ========================================================= -->
+    <section id="galaxy" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">POLITICAL / CORPORATE / COMPETITIVE LANDSCAPE</p>
+          <h2>The Wider Galaxy</h2>
+        </div>
+        <span class="section-stamp warning">CAUTION: JURISDICTIONS MAY VARY</span>
+      </div>
+
+      <div class="faction-grid">
+        <article class="faction-card patrol">
+          <span class="card-code">INTERGALACTIC SPACE PATROL</span>
+          <h3>The Law Between Worlds</h3>
+          <p>A sprawling interstellar law-enforcement body tasked with policing routes no single government can claim. Often decent people. Frequently inconvenient paperwork.</p>
+        </article>
+        <article class="faction-card asterion">
+          <span class="card-code">ASTERION DYNAMICS</span>
+          <h3>The Mega-est Megacorp</h3>
+          <p>Ports, gates, colonies, logistics, infrastructure, private security, and enough subsidiary companies to make monopoly law mostly decorative.</p>
+        </article>
+        <article class="faction-card starbreakers">
+          <span class="card-code">THE STARBREAKERS</span>
+          <h3>Rivals. Allegedly.</h3>
+          <p>A newer three-person bounty crew who consider the Neon Vagrant their legendary rivals. Mara knows them as “those kids with the orange ship.”</p>
+        </article>
+      </div>
+
+      <div class="subheading-row">
+        <div>
+          <p class="kicker">ASSOCIATED PERSONS</p>
+          <h3>External Files</h3>
+        </div>
+        <p class="hint">Select a file to open its profile.</p>
+      </div>
+
+      <div id="galaxy-gallery" class="portrait-gallery"></div>
+      <div id="galaxy-bio" class="bio-panel"></div>
+    </section>
+
+    <!-- =========================================================
+         TAB 4: PLACES OF NOTE
+         These are intentionally starter concepts. Replace or expand them
+         as the setting develops. Each location can later receive dedicated art.
+         ========================================================= -->
+    <section id="places" class="tab-panel">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">NAVIGATION CACHE // SELECTED DESTINATIONS</p>
+          <h2>Places of Note</h2>
+        </div>
+        <span class="section-stamp">ROUTE DATA PARTIAL</span>
+      </div>
+
+      <div class="location-grid">
+        <article class="location-card">
+          <div class="location-art placeholder-art" data-placeholder="Neutral orbital port / independent trade hub"></div>
+          <div class="location-body">
+            <span class="location-tag">NEUTRAL PORT</span>
+            <h3>Port Meridian</h3>
+            <p>A sprawling freeport stitched together from decommissioned stations and stubborn legal precedent. Everybody trades here. Nobody admits ownership.</p>
+            <dl><dt>AUTHORITY</dt><dd>Port Cooperative</dd><dt>RISK</dt><dd>Moderate</dd></dl>
+          </div>
+        </article>
+
+        <article class="location-card">
+          <div class="location-art placeholder-art" data-placeholder="Enormous pristine Asterion orbital city"></div>
+          <div class="location-body">
+            <span class="location-tag corporate">ASTERION HUB</span>
+            <h3>Helix Crown</h3>
+            <p>Asterion’s flagship commercial station: immaculate, efficient, beautiful, and designed so thoroughly around corporate access that independents feel like trespassers.</p>
+            <dl><dt>AUTHORITY</dt><dd>Asterion Dynamics</dd><dt>RISK</dt><dd>Low, unless wanted</dd></dl>
+          </div>
+        </article>
+
+        <article class="location-card">
+          <div class="location-art placeholder-art" data-placeholder="Dusty frontier moon settlement with neon bars and landing pads"></div>
+          <div class="location-body">
+            <span class="location-tag">FRONTIER COLONY</span>
+            <h3>Gallows Moon</h3>
+            <p>A mining settlement that outlived the mine. Now it survives on refuelling, bounty work, salvage, gambling, and a deeply unhealthy number of bars.</p>
+            <dl><dt>AUTHORITY</dt><dd>Local Council</dd><dt>RISK</dt><dd>Variable</dd></dl>
+          </div>
+        </article>
+
+        <article class="location-card">
+          <div class="location-art placeholder-art" data-placeholder="Famous retro-future racing world / orbital speedway"></div>
+          <div class="location-body">
+            <span class="location-tag racing">RACING CIRCUIT</span>
+            <h3>Vesper Run</h3>
+            <p>One of the galaxy’s most famous racing destinations — and a place Mara Vexley has complicated reasons for avoiding.</p>
+            <dl><dt>AUTHORITY</dt><dd>Mixed Corporate</dd><dt>RISK</dt><dd>Emotional</dd></dl>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- MERCY cut-in. JS rotates tips and makes her appear intermittently. -->
+  <aside id="mercy-cut-in" class="mercy-cut-in" aria-live="polite">
+    <button class="mercy-close" aria-label="Dismiss MERCY">×</button>
+    <div class="mercy-avatar placeholder-art" data-placeholder="Small MERCY hologram cut-in image / face pressed close to screen">
+      <span>M.E.R.C.Y.</span>
+    </div>
+    <div>
+      <p class="mercy-label">UNAUTHORIZED ADVISORY // M.E.R.C.Y.</p>
+      <p id="mercy-tip">If a customs officer says “routine inspection,” start emotionally preparing for three hours of paperwork.</p>
+    </div>
+  </aside>
+
+  <footer>
+    <span>NEON VAGRANT // UNOFFICIAL INDEPENDENT TERMINAL</span>
+    <span class="footer-blink">▮</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
