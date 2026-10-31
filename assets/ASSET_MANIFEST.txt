@@ -1,0 +1,48 @@
+NEON VAGRANT ART ASSET MANIFEST
+
+HOME
+- hero-neon-vagrant.jpg — wide homepage key art (suggest 1600x900+)
+- ship-neon-vagrant.jpg — dedicated ship exterior reference
+
+CREW MUGSHOTS — 300x400
+- mugshot-mara.jpg
+- mugshot-jett.jpg
+- mugshot-boone.jpg
+- mugshot-ivo.jpg
+- mugshot-calder.jpg
+- mugshot-sabine.jpg
+- mugshot-pip-human.jpg
+
+CREW LARGE REFERENCE ART
+- reference-mara.jpg
+- reference-jett.jpg
+- reference-boone.jpg
+- reference-ivo.jpg
+- reference-calder.jpg
+- reference-sabine.jpg
+- reference-pip.jpg
+
+WIDER GALAXY ICONS — 300x400
+- id-veda.jpg
+- capture-mercy.jpg
+- mugshot-cass.jpg
+- mugshot-beck.jpg
+- mugshot-orion.jpg
+- magazine-celestine.jpg
+
+WIDER GALAXY LARGE REFERENCE ART
+- reference-veda.jpg
+- reference-mercy.jpg
+- reference-cass.jpg
+- reference-beck.jpg
+- reference-orion.jpg
+- reference-celestine.jpg
+
+OPTIONAL MERCY CUT-IN ART
+- mercy-cut-in.png — transparent or cropped hologram graphic for popup
+
+OPTIONAL LOCATION ART
+- location-port-meridian.jpg
+- location-helix-crown.jpg
+- location-gallows-moon.jpg
+- location-vesper-run.jpg
