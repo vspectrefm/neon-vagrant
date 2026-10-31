@@ -1,3 +1,19 @@
-theme: jekyll-theme-minimal
 title: Neon Vagrant
-description: Bookmark this to keep an eye on my project updates!
+description: Independent transit, courier, recovery and bounty operations beyond corporate comfort.
+
+theme: null
+
+include:
+  - assets
+
+exclude:
+  - README.md
+  - neon-vagrant-site.zip
+
+plugins: []
+
+markdown: kramdown
+
+permalink: pretty
+
+defaults: []
